@@ -1,0 +1,204 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #fff;
+  background-color: #3b3b3b; /* Dark background */
+  line-height: 1.6;
+}
+
+header {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .logo h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 1.5rem;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+section {
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero {
+  background: url('img/Iphonegrp.webp') no-repeat center center/cover;
+  padding: 5rem 2rem;
+  color: #fff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-content {
+  text-align: center;
+  max-width: 800px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color:#d8d7d7;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  color:rgb(255, 255, 255);
+}
+
+button {
+  background-color: #ff6f61;
+  color: white;
+  padding: 1rem 2rem;
+  font-size: 1.5rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-weight: bold;
+  
+}
+
+button:hover {
+  background-color: #ff5733;
+}
+
+.giveaway-image {
+  margin-top: 2rem;
+}
+
+.iphone-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* iPhone Models Section */
+#iphones h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.iphone-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 2rem;
+}
+
+.iphone-model img {
+  width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.iphone-model p {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Contact Form */
+form {
+  background-color: #333;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+form label,
+form input,
+form button {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+form input,
+form button {
+  padding: 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+}
+
+form button {
+  background-color: #ff6f61;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #ff5733;
+}
+
+/* Footer */
+footer {
+  background-color: #111;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 4rem;
+}
+
+@media (max-width: 768px) {
+  .hero h2 {
+      font-size: 2rem;
+  }
+
+  .hero p {
+      font-size: 1rem;
+  }
+
+  .iphone-image {
+      width: 80%;
+      max-width: 350px;
+  }
+
+  .iphone-gallery {
+      grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h2 {
+      font-size: 1.8rem;
+  }
+
+  .iphone-image {
+      width: 90%;
+      max-width: 300px;
+  }
+
+  .iphone-gallery {
+      grid-template-columns: 1fr;
+  }
+
+  .iphone-model p {
+      font-size: 1rem;
+  }
+}
